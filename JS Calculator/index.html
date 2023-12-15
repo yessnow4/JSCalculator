@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Calculator </title>
+    <link rel="icon" href="resources/images/icon.jpg">
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="resources/js/calculator.js" defer></script>
+</head>
+
+<body>
+    <div class="title">
+        <h1>JavaScript Calculator Application</h1>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" disabled>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()">
+                    <input type="button" value="C" onclick="deleteLastChar()">
+                    <input type="button" value="/" onclick="appendToDisplay('/')">
+                    <input type="button" value="." onclick="appendToDisplay('.')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="appendToDisplay('7')">
+                    <input type="button" value="8" onclick="appendToDisplay('8')">
+                    <input type="button" value="9" onclick="appendToDisplay('9')">
+                    <input type="button" value="*" onclick="appendToDisplay('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="appendToDisplay('4')">
+                    <input type="button" value="5" onclick="appendToDisplay('5')">
+                    <input type="button" value="6" onclick="appendToDisplay('6')">
+                    <input type="button" value="-" onclick="appendToDisplay('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="appendToDisplay('1')">
+                    <input type="button" value="2" onclick="appendToDisplay('2')">
+                    <input type="button" value="3" onclick="appendToDisplay('3')">
+                    <input type="button" value="+" onclick="appendToDisplay('+')">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="appendToDisplay('0')">
+                    <input type="button" value="(" onclick="appendToDisplay('(')">
+                    <input type="button" value=")" onclick="appendToDisplay(')')">
+                    <input type="button" class="equal" value="=" onclick="calculate()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
